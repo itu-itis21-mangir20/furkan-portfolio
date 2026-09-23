@@ -87,7 +87,8 @@
   <main class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-32 pb-20 space-y-28">
 
     <!-- HERO SECTION -->
-    <section id="hero" class="min-h-[75vh] flex flex-col justify-center items-start space-y-6">
+    <section id="hero" class="min-h-[75vh] grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(260px,360px)] gap-12 lg:gap-20 items-center">
+      <div class="space-y-6">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-950/70 border border-teal-700/40 text-teal-300 text-xs font-mono">
         <span class="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
         AI Agent Engineer | Munich, Germany
@@ -138,6 +139,22 @@
           <span>LinkedIn</span>
         </a>
       </div>
+      </div>
+
+      <aside class="relative group w-full max-w-sm mx-auto md:mx-0" aria-label="Profile photo">
+        <div class="absolute -inset-3 rounded-[2rem] bg-teal-400/10 blur-2xl group-hover:bg-teal-400/20 transition-colors"></div>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-teal-400/30 bg-slate-900 shadow-2xl shadow-teal-950/40">
+          <img src="cv_photo.jpeg" alt="Furkan Mangır" class="h-full w-full object-cover object-[76%_center] saturate-[0.9] transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/10"></div>
+          <div class="absolute inset-x-5 bottom-5 flex items-end justify-between gap-3">
+            <div>
+              <p class="text-xs font-mono uppercase tracking-[0.2em] text-teal-300">Based in Munich</p>
+              <p class="mt-1 text-lg font-semibold text-white">Furkan Mangır</p>
+            </div>
+            <span class="mb-1 h-2.5 w-2.5 rounded-full bg-teal-400 shadow-lg shadow-teal-400/70"></span>
+          </div>
+        </div>
+      </aside>
     </section>
 
     <!-- EXPERIENCE SECTION -->
